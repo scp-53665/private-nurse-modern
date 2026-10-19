@@ -1,0 +1,270 @@
+
+===== original/NURSEUS.EXE
+machine=0x014c chars=0x010f timestamp=1035293042 ep=0x374e5 imagebase=0x400000 subsystem=2 linker=6.0
+  imageversion=0.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x004bf72 raw=0x004c000 ent=6.51 chars=0xe0000020
+  sect .rdata   va=0x004d000 vsize=0x000a25c raw=0x000b000 ent=4.46 chars=0xc0000040
+  sect .data    va=0x0058000 vsize=0x0008b3c raw=0x0005000 ent=4.84 chars=0xc0000040
+  sect .rsrc    va=0x0061000 vsize=0x000b730 raw=0x000c000 ent=4.11 chars=0xc0000040
+  sect .imports va=0x006d000 vsize=0x0000125 raw=0x0000125 ent=3.45 chars=0xc00000c0
+  IMPORT WINMM.dll (24): timeSetEvent timeKillEvent mixerGetLineControlsA mixerGetControlDetailsA mmioGetInfo mmioAscend mixerSetControlDetails mixerClose mixerGetDevCapsA mixerOpen midiOutGetDevCapsA mixerGetLineInfoA waveOutGetDevCapsA mmioWrite mciSendCommandA timeBeginPeriod mmioClose mmioRead timeEndPeriod timeGetTime mmioDescend mmioOpenA mmioCreateChunk mmioSeek
+  IMPORT DSOUND.dll (1): ord#1
+  IMPORT MSACM32.dll (14): acmStreamClose acmStreamUnprepareHeader acmStreamConvert acmDriverOpen acmStreamOpen acmStreamSize acmStreamPrepareHeader acmDriverEnum acmDriverClose acmFormatSuggest acmMetrics acmGetVersion acmDriverAddA acmDriverDetailsA
+  IMPORT KERNEL32.dll (129): LockResource LoadResource GetCurrentThreadId FindResourceA InterlockedIncrement WideCharToMultiByte DuplicateHandle GetCurrentProcess LockFile GlobalAddAtomA GlobalGetAtomNameA GetFullPathNameA SetEndOfFile UnlockFile TlsAlloc DeleteCriticalSection TlsFree LeaveCriticalSection EnterCriticalSection TlsSetValue LocalReAlloc TlsGetValue GlobalFlags GetProcessVersion GetCPInfo GetOEMCP GetFileAttributesA GetFileTime LocalAlloc FileTimeToSystemTime FileTimeToLocalFileTime lstrcpynA InitializeCriticalSection RtlUnwind GlobalFindAtomA GetStartupInfoA GetCommandLineA ExitProcess HeapFree HeapAlloc ...
+  IMPORT USER32.dll (132): GetLastActivePopup SetWindowLongA SetForegroundWindow GetForegroundWindow GetMessagePos GetMessageTime RemovePropA CallWindowProcA GetPropA SetPropA GetClassLongA CallNextHookEx SetWindowsHookExA CreateWindowExA DestroyWindow GetDlgCtrlID GetWindowTextA GetDlgItem TrackPopupMenu GetMenuItemID GetMenuItemCount GetMenu RegisterClassA GetCapture GetTopWindow AdjustWindowRectEx SetFocus GetSysColor MapWindowPoints SendDlgItemMessageA SetDlgItemTextA ScrollWindowEx IsDialogMessageA SetWindowTextA MoveWindow GetNextDlgTabItem SetMenuItemBitmaps GetMenuState LoadBitmapA GetMenuCheckMarkDimensions ...
+  IMPORT GDI32.dll (44): GetObjectA SelectObject CreateCompatibleDC CreateCompatibleBitmap DeleteObject CreateDIBSection CreateBitmap DeleteDC CreateSolidBrush StretchBlt TextOutA SetBkMode SetTextColor SetStretchBltMode GetTextExtentPoint32A SetDIBColorTable GetStockObject CreateRectRgn CreateRectRgnIndirect CombineRgn SaveDC RestoreDC SetBkColor SetMapMode SetViewportOrgEx SetViewportExtEx ScaleViewportExtEx OffsetViewportOrgEx SetWindowExtEx GetClipBox SelectClipRgn ScaleWindowExtEx CreateFontA GetDeviceCaps ExtSelectClipRgn CreatePatternBrush PtVisible RectVisible Escape ExtTextOutA ...
+  IMPORT comdlg32.dll (1): GetFileTitleA
+  IMPORT WINSPOOL.DRV (3): OpenPrinterA DocumentPropertiesA ClosePrinter
+  IMPORT ADVAPI32.dll (5): RegCreateKeyExA RegSetValueExA RegOpenKeyExA RegCloseKey RegQueryValueExA
+  IMPORT SHELL32.dll (1): SHAppBarMessage
+  IMPORT COMCTL32.dll (4): ord#17 DestroyPropertySheetPage CreatePropertySheetPageA PropertySheetA
+  IMPORT ole32.dll (3): CoCreateInstance CoUninitialize CoInitialize
+  IMPORT fakecdda.dll (1): mciSendCommandA
+  IMPORT fakecdda.dll (1): mixerSetControlDetails
+  VERSION FileVersion = 1.0.0.1
+  VERSION FileDescription = Private Nurse
+  VERSION LegalCopyright = (C) 2002 AngelSmile (C) 2002 GamelexGS Inc.
+  VERSION Comments = Private Nurse
+  VERSION CompanyName = GamelexGS Inc.
+  VERSION LegalTrademarks = GamelexGS
+  VERSION OriginalFilename = NURSEUS.EXE
+  VERSION ProductVersion = 1.0.0.1
+  VERSION ProductName = Private Nurse
+  VERSION InternalName = NURSEUS
+
+===== original/fakecdda.dll
+machine=0x014c chars=0x230e timestamp=1261072051 ep=0x1060 imagebase=0x65700000 subsystem=2 linker=2.56
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x0000a10 raw=0x0000c00 ent=5.10 chars=0x60000020
+  sect .data    va=0x0002000 vsize=0x0000024 raw=0x0000200 ent=0.15 chars=0xc0000040
+  sect .rdata   va=0x0003000 vsize=0x0000100 raw=0x0000200 ent=2.84 chars=0x40000040
+  sect .bss     va=0x0004000 vsize=0x0000060 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x0005000 vsize=0x0000092 raw=0x0000200 ent=1.56 chars=0x40000040
+  sect .idata   va=0x0006000 vsize=0x0000248 raw=0x0000400 ent=2.62 chars=0xc0000040
+  sect .rsrc    va=0x0007000 vsize=0x0000378 raw=0x0000400 ent=3.02 chars=0xc0000040
+  sect .reloc   va=0x0008000 vsize=0x00000d0 raw=0x0000200 ent=3.07 chars=0x42000040
+  IMPORT KERNEL32.dll (2): GetModuleHandleA GetProcAddress
+  IMPORT msvcrt.dll (10): __dllonexit _errno _strnicmp atoi fflush free malloc memcpy sprintf strncpy
+  IMPORT fakemm.dll (3): WINMM_mciSendCommandA WINMM_mciSendStringA WINMM_mixerSetControlDetails
+  EXPORTS (3): mciSendCommandA mciSendStringA mixerSetControlDetails
+  VERSION FileDescription = Changes from CDDA playback to mp3
+  VERSION LegalCopyright = Vegard Fiksdal Technologies (C) 2009
+  VERSION CompanyName = Vegard Fiksdal Technologies
+  VERSION InternalName = FAKECDDA.DLL
+  VERSION OriginalFilename = FAKECDDA.DLL
+  VERSION ProductName = FakeCDDA
+  VERSION FileVersion = 0.2.2
+  VERSION ProductVersion = 0.2.2
+
+===== original/fakemm.dll
+machine=0x014c chars=0x230e timestamp=1261072050 ep=0x1060 imagebase=0x64dc0000 subsystem=2 linker=2.56
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x00003a0 raw=0x0000400 ent=5.11 chars=0x60000020
+  sect .data    va=0x0002000 vsize=0x0000014 raw=0x0000200 ent=0.08 chars=0xc0000040
+  sect .rdata   va=0x0003000 vsize=0x0000030 raw=0x0000200 ent=0.56 chars=0x40000040
+  sect .bss     va=0x0004000 vsize=0x0000050 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x0005000 vsize=0x0000099 raw=0x0000200 ent=1.81 chars=0x40000040
+  sect .idata   va=0x0006000 vsize=0x00001c8 raw=0x0000200 ent=3.42 chars=0xc0000040
+  sect .rsrc    va=0x0007000 vsize=0x0000370 raw=0x0000400 ent=2.99 chars=0xc0000040
+  sect .reloc   va=0x0008000 vsize=0x0000064 raw=0x0000200 ent=1.42 chars=0x42000040
+  IMPORT KERNEL32.dll (2): GetModuleHandleA GetProcAddress
+  IMPORT msvcrt.dll (5): __dllonexit _errno fflush free malloc
+  IMPORT WINMM.DLL (3): mciSendCommandA mciSendStringA mixerSetControlDetails
+  EXPORTS (3): WINMM_mciSendCommandA WINMM_mciSendStringA WINMM_mixerSetControlDetails
+  VERSION FileDescription = Changes from CDDA playback to mp3
+  VERSION LegalCopyright = Vegard Fiksdal Technologies (C) 2009
+  VERSION CompanyName = Vegard Fiksdal Technologies
+  VERSION InternalName = FAKEMM.DLL
+  VERSION OriginalFilename = FAKEMM.DLL
+  VERSION ProductName = FakeCDDA
+  VERSION FileVersion = 0.2.0
+  VERSION ProductVersion = 0.2.0
+
+===== original/d3d8.dll
+machine=0x014c chars=0x230e timestamp=1756549344 ep=0x11f0 imagebase=0x70640000 subsystem=3 linker=2.45
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x012a638 raw=0x012b000 ent=6.35 chars=0x60000060
+  sect .data    va=0x012c000 vsize=0x0001644 raw=0x0002000 ent=1.29 chars=0xc0000040
+  sect .rdata   va=0x012e000 vsize=0x00127a0 raw=0x0013000 ent=5.67 chars=0x40000040
+  sect /4       va=0x0141000 vsize=0x004961c raw=0x004a000 ent=4.96 chars=0x40000040
+  sect .bss     va=0x018b000 vsize=0x0000c70 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x018c000 vsize=0x000009f raw=0x0001000 ent=0.32 chars=0x40000040
+  sect .idata   va=0x018d000 vsize=0x0001144 raw=0x0002000 ent=3.43 chars=0x40000040
+  sect .tls     va=0x018f000 vsize=0x0000008 raw=0x0001000 ent=-0.00 chars=0xc0000040
+  sect .rsrc    va=0x0190000 vsize=0x0000340 raw=0x0001000 ent=0.89 chars=0x40000040
+  sect .reloc   va=0x0191000 vsize=0x0007ee4 raw=0x0008000 ent=6.61 chars=0x42000040
+  IMPORT d3d9.dll (1): Direct3DCreate9
+  IMPORT KERNEL32.dll (58): AcquireSRWLockExclusive CloseHandle CreateDirectoryW CreateEventA CreateSemaphoreA DeleteCriticalSection DuplicateHandle EnterCriticalSection FormatMessageA FreeLibrary GetCurrentProcess GetCurrentProcessId GetCurrentThread GetCurrentThreadId GetEnvironmentVariableW GetHandleInformation GetLastError GetModuleFileNameW GetModuleHandleA GetModuleHandleW GetProcAddress GetProcessAffinityMask GetProcessHeap GetSystemTimeAsFileTime GetThreadContext GetThreadPriority GetTickCount HeapAlloc InitializeCriticalSection IsDebuggerPresent LeaveCriticalSection LoadLibraryA LocalFree OpenProcess OutputDebugStringA QueryPerformanceCounter QueryPerformanceFrequency RaiseException ReleaseSRWLockExclusive ReleaseSemaphore ...
+  IMPORT api-ms-win-crt-convert-l1-1-0.dll (6): btowc mbrtowc mbsrtowcs strtoul wcrtomb wctob
+  IMPORT api-ms-win-crt-environment-l1-1-0.dll (1): getenv
+  IMPORT api-ms-win-crt-filesystem-l1-1-0.dll (1): _fstat64
+  IMPORT api-ms-win-crt-heap-l1-1-0.dll (4): calloc free malloc realloc
+  IMPORT api-ms-win-crt-locale-l1-1-0.dll (3): ___mb_cur_max_func localeconv setlocale
+  IMPORT api-ms-win-crt-math-l1-1-0.dll (1): _fdopen
+  IMPORT api-ms-win-crt-private-l1-1-0.dll (7): _setjmp3 longjmp memchr memcmp memcpy memmove strchr
+  IMPORT api-ms-win-crt-runtime-l1-1-0.dll (12): _assert _beginthreadex _endthreadex _errno _execute_onexit_table _exit _initialize_onexit_table _initterm _initterm_e _register_onexit_function abort strerror
+  IMPORT api-ms-win-crt-stdio-l1-1-0.dll (16): __acrt_iob_func __stdio_common_vfprintf __stdio_common_vsprintf _get_osfhandle _lseeki64 _wfopen fclose fflush fopen fputc fputs fwrite setvbuf _write _read _fileno
+  IMPORT api-ms-win-crt-string-l1-1-0.dll (17): iswctype memset strcmp strcoll strlen strncmp strncpy strnlen strxfrm towlower towupper wcscoll wcslen wcsnlen wcsxfrm wctype _strdup
+  IMPORT api-ms-win-crt-time-l1-1-0.dll (2): strftime wcsftime
+  IMPORT api-ms-win-crt-utility-l1-1-0.dll (1): rand_s
+  EXPORTS (4): DebugSetMute Direct3DCreate8 ValidatePixelShader ValidateVertexShader
+  VERSION CompanyName = DXVK
+  VERSION FileDescription = Direct3D 8 Runtime
+  VERSION FileVersion = 10.0.17763.1 (WinBuild.160101.0800)
+  VERSION InternalName = D3D8.dll
+  VERSION LegalCopyright = zlib/libpng license
+  VERSION OriginalFilename = D3D8.dll
+  VERSION ProductName = DXVK
+  VERSION ProductVersion = 10.0.17763.1
+
+===== original/d3d9.dll
+machine=0x014c chars=0x230e timestamp=1756549344 ep=0x11f0 imagebase=0x62440000 subsystem=3 linker=2.45
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x02f57f0 raw=0x02f6000 ent=6.37 chars=0x60000060
+  sect .data    va=0x02f7000 vsize=0x0004d84 raw=0x0005000 ent=1.29 chars=0xc0000040
+  sect .rdata   va=0x02fc000 vsize=0x0092964 raw=0x0093000 ent=5.25 chars=0x40000040
+  sect /4       va=0x038f000 vsize=0x0084b84 raw=0x0085000 ent=5.25 chars=0x40000040
+  sect .bss     va=0x0414000 vsize=0x00015f0 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x0416000 vsize=0x001bb86 raw=0x001c000 ent=0.06 chars=0x40000040
+  sect .idata   va=0x0432000 vsize=0x0001b78 raw=0x0002000 ent=4.93 chars=0x40000040
+  sect .tls     va=0x0434000 vsize=0x0000008 raw=0x0001000 ent=-0.00 chars=0xc0000040
+  sect .rsrc    va=0x0435000 vsize=0x0000340 raw=0x0001000 ent=0.89 chars=0x40000040
+  sect .reloc   va=0x0436000 vsize=0x0014c04 raw=0x0015000 ent=6.62 chars=0x42000040
+  IMPORT ADVAPI32.dll (6): AllocateLocallyUniqueId RegCloseKey RegNotifyChangeKeyValue RegOpenKeyExA RegQueryValueExA RegQueryValueExW
+  IMPORT GDI32.dll (5): CreateBitmap CreateCompatibleDC DeleteDC DeleteObject StretchBlt
+  IMPORT KERNEL32.dll (72): AcquireSRWLockExclusive CloseHandle CreateDirectoryW CreateEventA CreateFileA CreateFileMappingA CreateSemaphoreA CreateThread DeleteCriticalSection DeviceIoControl DuplicateHandle EnterCriticalSection FormatMessageA FreeLibrary GetCurrentProcess GetCurrentProcessId GetCurrentThread GetCurrentThreadId GetEnvironmentVariableW GetHandleInformation GetLastError GetModuleFileNameW GetModuleHandleA GetModuleHandleExA GetModuleHandleW GetProcAddress GetProcessAffinityMask GetSystemInfo GetSystemTimeAsFileTime GetTempFileNameA GetTempPathA GetThreadContext GetThreadPriority GetTickCount64 GetTickCount InitializeConditionVariable InitializeCriticalSection IsDebuggerPresent LeaveCriticalSection LoadLibraryA ...
+  IMPORT api-ms-win-crt-convert-l1-1-0.dll (6): btowc mbrtowc mbsrtowcs strtoul wcrtomb wctob
+  IMPORT api-ms-win-crt-environment-l1-1-0.dll (1): getenv
+  IMPORT api-ms-win-crt-filesystem-l1-1-0.dll (4): _lock_file _unlock_file remove _fstat64
+  IMPORT api-ms-win-crt-heap-l1-1-0.dll (6): _aligned_free _aligned_malloc calloc free malloc realloc
+  IMPORT api-ms-win-crt-locale-l1-1-0.dll (3): ___mb_cur_max_func localeconv setlocale
+  IMPORT api-ms-win-crt-math-l1-1-0.dll (5): cos fmaxf fminf pow _fdopen
+  IMPORT api-ms-win-crt-private-l1-1-0.dll (7): _setjmp3 longjmp memchr memcmp memcpy memmove strchr
+  IMPORT api-ms-win-crt-runtime-l1-1-0.dll (12): _assert _beginthreadex _endthreadex _errno _execute_onexit_table _exit _initialize_onexit_table _initterm _initterm_e _register_onexit_function abort strerror
+  IMPORT api-ms-win-crt-stdio-l1-1-0.dll (20): __acrt_iob_func __stdio_common_vfprintf __stdio_common_vsprintf _fseeki64 _ftelli64 _get_osfhandle _lseeki64 _wfopen fclose fflush fopen fputc fputs fread ftell fwrite setvbuf _write _read _fileno
+  IMPORT api-ms-win-crt-string-l1-1-0.dll (19): _wcsicmp iswctype memset strcmp strcoll strlen strncmp strncpy strnlen strxfrm towlower towupper wcscmp wcscoll wcslen wcsnlen wcsxfrm wctype _strdup
+  IMPORT api-ms-win-crt-time-l1-1-0.dll (2): strftime wcsftime
+  IMPORT api-ms-win-crt-utility-l1-1-0.dll (1): rand_s
+  IMPORT SETUPAPI.dll (4): SetupDiEnumDeviceInterfaces SetupDiGetClassDevsW SetupDiGetDeviceInterfaceDetailW SetupDiOpenDevRegKey
+  IMPORT USER32.dll (40): AdjustWindowRectEx CallWindowProcA CallWindowProcW ChangeDisplaySettingsExW ClientToScreen CreateIconIndirect DefWindowProcA DefWindowProcW DestroyCursor DisplayConfigGetDeviceInfo EnumDisplayDevicesA EnumDisplayMonitors EnumDisplaySettingsW GetClientRect GetCursorPos GetDCEx GetDisplayConfigBufferSizes GetForegroundWindow GetMonitorInfoW GetWindowLongA GetWindowLongW GetWindowRect IsIconic IsWindow IsWindowUnicode IsWindowVisible MonitorFromPoint MoveWindow OffsetRect PostMessageW QueryDisplayConfig ReleaseDC SetCursor SetCursorPos SetProcessDPIAware SetRect SetWindowLongA SetWindowLongW SetWindowPos ShowWindow
+  EXPORTS (20): D3DPERF_BeginEvent D3DPERF_EndEvent D3DPERF_GetStatus D3DPERF_QueryRepeatFrame D3DPERF_SetMarker D3DPERF_SetOptions D3DPERF_SetRegion DebugSetLevel DebugSetMute Direct3D9EnableMaximizedWindowedModeShim Direct3DCreate9 Direct3DCreate9Ex Direct3DCreate9On12 Direct3DCreate9On12Ex Direct3DShaderValidatorCreate9 PSGPError PSGPSampleTexture ord#16 ord#28257 ord#28258
+  VERSION CompanyName = DXVK
+  VERSION FileDescription = Direct3D 9 Runtime
+  VERSION FileVersion = 10.0.17763.1 (WinBuild.160101.0800)
+  VERSION InternalName = D3D9.dll
+  VERSION LegalCopyright = zlib/libpng license
+  VERSION OriginalFilename = D3D9.dll
+  VERSION ProductName = DXVK
+  VERSION ProductVersion = 10.0.17763.1
+
+===== original/d3d11.dll
+machine=0x014c chars=0x230e timestamp=1756549344 ep=0x11f0 imagebase=0x6a540000 subsystem=3 linker=2.45
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x0359ad8 raw=0x035a000 ent=6.37 chars=0x60000060
+  sect .data    va=0x035b000 vsize=0x0004984 raw=0x0005000 ent=1.28 chars=0xc0000040
+  sect .rdata   va=0x0360000 vsize=0x008cfb8 raw=0x008d000 ent=5.14 chars=0x40000040
+  sect /4       va=0x03ed000 vsize=0x00a3750 raw=0x00a4000 ent=5.24 chars=0x40000040
+  sect .bss     va=0x0491000 vsize=0x00023d0 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x0494000 vsize=0x00000c2 raw=0x0001000 ent=0.39 chars=0x40000040
+  sect .idata   va=0x0495000 vsize=0x0001794 raw=0x0002000 ent=4.38 chars=0x40000040
+  sect .tls     va=0x0497000 vsize=0x0000008 raw=0x0001000 ent=-0.00 chars=0xc0000040
+  sect .rsrc    va=0x0498000 vsize=0x0000340 raw=0x0001000 ent=0.90 chars=0x40000040
+  sect .reloc   va=0x0499000 vsize=0x0013a1c raw=0x0014000 ent=6.60 chars=0x42000040
+  IMPORT ADVAPI32.dll (5): RegCloseKey RegNotifyChangeKeyValue RegOpenKeyExA RegQueryValueExA RegQueryValueExW
+  IMPORT dxgi.dll (1): CreateDXGIFactory1
+  IMPORT GDI32.dll (1): CreateCompatibleDC
+  IMPORT KERNEL32.dll (67): AcquireSRWLockExclusive CloseHandle CreateDirectoryW CreateEventA CreateFileA CreateSemaphoreA CreateThread DeleteCriticalSection DeviceIoControl DuplicateHandle EnterCriticalSection FormatMessageA FreeLibrary GetCurrentProcess GetCurrentProcessId GetCurrentThread GetCurrentThreadId GetEnvironmentVariableW GetHandleInformation GetLastError GetModuleFileNameW GetModuleHandleA GetModuleHandleExA GetModuleHandleW GetProcAddress GetProcessAffinityMask GetSystemInfo GetSystemTimeAsFileTime GetThreadContext GetThreadPriority GetTickCount64 GetTickCount InitializeConditionVariable InitializeCriticalSection IsDebuggerPresent LeaveCriticalSection LoadLibraryA LocalFree OpenProcess OutputDebugStringA ...
+  IMPORT api-ms-win-crt-convert-l1-1-0.dll (6): btowc mbrtowc mbsrtowcs strtoul wcrtomb wctob
+  IMPORT api-ms-win-crt-environment-l1-1-0.dll (1): getenv
+  IMPORT api-ms-win-crt-filesystem-l1-1-0.dll (1): _fstat64
+  IMPORT api-ms-win-crt-heap-l1-1-0.dll (6): _aligned_free _aligned_malloc calloc free malloc realloc
+  IMPORT api-ms-win-crt-locale-l1-1-0.dll (3): ___mb_cur_max_func localeconv setlocale
+  IMPORT api-ms-win-crt-math-l1-1-0.dll (3): fmaxf fminf _fdopen
+  IMPORT api-ms-win-crt-private-l1-1-0.dll (7): _setjmp3 longjmp memchr memcmp memcpy memmove strchr
+  IMPORT api-ms-win-crt-runtime-l1-1-0.dll (12): _assert _beginthreadex _endthreadex _errno _execute_onexit_table _exit _initialize_onexit_table _initterm _initterm_e _register_onexit_function abort strerror
+  IMPORT api-ms-win-crt-stdio-l1-1-0.dll (16): __acrt_iob_func __stdio_common_vfprintf __stdio_common_vsprintf _get_osfhandle _lseeki64 _wfopen fclose fflush fopen fputc fputs fwrite setvbuf _write _read _fileno
+  IMPORT api-ms-win-crt-string-l1-1-0.dll (19): _wcsicmp iswctype memset strcmp strcoll strlen strncmp strncpy strnlen strxfrm towlower towupper wcscmp wcscoll wcslen wcsnlen wcsxfrm wctype _strdup
+  IMPORT api-ms-win-crt-time-l1-1-0.dll (2): strftime wcsftime
+  IMPORT api-ms-win-crt-utility-l1-1-0.dll (1): rand_s
+  IMPORT SETUPAPI.dll (4): SetupDiEnumDeviceInterfaces SetupDiGetClassDevsW SetupDiGetDeviceInterfaceDetailW SetupDiOpenDevRegKey
+  IMPORT USER32.dll (20): AdjustWindowRectEx ChangeDisplaySettingsExW DisplayConfigGetDeviceInfo EnumDisplayMonitors EnumDisplaySettingsW GetClientRect GetDisplayConfigBufferSizes GetForegroundWindow GetMonitorInfoW GetWindowLongA GetWindowLongW GetWindowRect IsWindow MonitorFromPoint MoveWindow OffsetRect QueryDisplayConfig SetRect SetWindowLongW SetWindowPos
+  EXPORTS (4): D3D11CoreCreateDevice D3D11CreateDevice D3D11CreateDeviceAndSwapChain D3D11On12CreateDevice
+  VERSION CompanyName = DXVK
+  VERSION FileDescription = Direct3D 11 Runtime
+  VERSION FileVersion = 10.0.17763.1 (WinBuild.160101.0800)
+  VERSION InternalName = D3D11.dll
+  VERSION LegalCopyright = zlib/libpng license
+  VERSION OriginalFilename = D3D11.dll
+  VERSION ProductName = DXVK
+  VERSION ProductVersion = 10.0.17763.1
+
+===== original/d3d10core.dll
+machine=0x014c chars=0x230e timestamp=1756549344 ep=0x11f0 imagebase=0x6c7c0000 subsystem=3 linker=2.45
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x0019838 raw=0x001a000 ent=6.08 chars=0x60000060
+  sect .data    va=0x001b000 vsize=0x0000088 raw=0x0001000 ent=0.20 chars=0xc0000040
+  sect .rdata   va=0x001c000 vsize=0x0002954 raw=0x0003000 ent=5.11 chars=0x40000040
+  sect /4       va=0x001f000 vsize=0x0005364 raw=0x0006000 ent=4.55 chars=0x40000040
+  sect .bss     va=0x0025000 vsize=0x0000114 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x0026000 vsize=0x0000096 raw=0x0001000 ent=0.32 chars=0x40000040
+  sect .idata   va=0x0027000 vsize=0x0000b78 raw=0x0001000 ent=4.10 chars=0x40000040
+  sect .tls     va=0x0028000 vsize=0x0000008 raw=0x0001000 ent=-0.00 chars=0xc0000040
+  sect .rsrc    va=0x0029000 vsize=0x0000350 raw=0x0001000 ent=0.92 chars=0x40000040
+  sect .reloc   va=0x002a000 vsize=0x0001240 raw=0x0002000 ent=4.57 chars=0x42000040
+  IMPORT d3d11.dll (1): D3D11CoreCreateDevice
+  IMPORT KERNEL32.dll (47): CloseHandle CreateEventA CreateSemaphoreA DeleteCriticalSection DuplicateHandle EnterCriticalSection FreeLibrary GetCurrentProcess GetCurrentProcessId GetCurrentThread GetCurrentThreadId GetHandleInformation GetLastError GetModuleHandleA GetProcAddress GetProcessAffinityMask GetSystemTimeAsFileTime GetThreadContext GetThreadPriority GetTickCount InitializeCriticalSection IsDebuggerPresent LeaveCriticalSection LoadLibraryA OpenProcess OutputDebugStringA QueryPerformanceCounter QueryPerformanceFrequency RaiseException ReleaseSemaphore ResetEvent ResumeThread SetEvent SetLastError SetProcessAffinityMask SetThreadContext SetThreadPriority Sleep SuspendThread TlsAlloc ...
+  IMPORT api-ms-win-crt-convert-l1-1-0.dll (2): mbsrtowcs strtoul
+  IMPORT api-ms-win-crt-environment-l1-1-0.dll (1): getenv
+  IMPORT api-ms-win-crt-heap-l1-1-0.dll (4): calloc free malloc realloc
+  IMPORT api-ms-win-crt-private-l1-1-0.dll (6): _setjmp3 longjmp memcmp memcpy memmove strchr
+  IMPORT api-ms-win-crt-runtime-l1-1-0.dll (11): _assert _beginthreadex _endthreadex _errno _execute_onexit_table _exit _initialize_onexit_table _initterm _initterm_e _register_onexit_function abort
+  IMPORT api-ms-win-crt-stdio-l1-1-0.dll (6): __acrt_iob_func __stdio_common_vfprintf __stdio_common_vsprintf fputc fputs fwrite
+  IMPORT api-ms-win-crt-string-l1-1-0.dll (5): memset strcmp strlen strncmp _strdup
+  EXPORTS (3): D3D10CoreCreateDevice D3D10CoreGetVersion D3D10CoreRegisterLayers
+  VERSION CompanyName = DXVK
+  VERSION FileDescription = Direct3D 10 Runtime
+  VERSION FileVersion = 10.0.17763.1 (WinBuild.160101.0800)
+  VERSION InternalName = D3D10Core.dll
+  VERSION LegalCopyright = zlib/libpng license
+  VERSION OriginalFilename = D3D10Core.dll
+  VERSION ProductName = DXVK
+  VERSION ProductVersion = 10.0.17763.1
+
+===== original/dxgi.dll
+machine=0x014c chars=0x230e timestamp=1756549344 ep=0x11f0 imagebase=0x6f400000 subsystem=3 linker=2.45
+  imageversion=1.0 osver=4.0
+  sect .text    va=0x0001000 vsize=0x023dc84 raw=0x023e000 ent=6.38 chars=0x60000060
+  sect .data    va=0x023f000 vsize=0x00047e4 raw=0x0005000 ent=1.20 chars=0xc0000040
+  sect .rdata   va=0x0244000 vsize=0x0049a84 raw=0x004a000 ent=5.37 chars=0x40000040
+  sect /4       va=0x028e000 vsize=0x0067690 raw=0x0068000 ent=5.17 chars=0x40000040
+  sect .bss     va=0x02f6000 vsize=0x0002230 raw=0x0000000 ent=0.00 chars=0xc0000080
+  sect .edata   va=0x02f9000 vsize=0x00000e3 raw=0x0001000 ent=0.45 chars=0x40000040
+  sect .idata   va=0x02fa000 vsize=0x0001830 raw=0x0002000 ent=4.55 chars=0x40000040
+  sect .tls     va=0x02fc000 vsize=0x0000008 raw=0x0001000 ent=-0.00 chars=0xc0000040
+  sect .rsrc    va=0x02fd000 vsize=0x0000358 raw=0x0001000 ent=0.92 chars=0x40000040
+  sect .reloc   va=0x02fe000 vsize=0x0010fec raw=0x0011000 ent=6.67 chars=0x42000040
+  IMPORT ADVAPI32.dll (6): AllocateLocallyUniqueId RegCloseKey RegNotifyChangeKeyValue RegOpenKeyExA RegQueryValueExA RegQueryValueExW
+  IMPORT KERNEL32.dll (67): AcquireSRWLockExclusive CloseHandle CreateDirectoryW CreateEventA CreateSemaphoreA CreateThread DeleteCriticalSection DuplicateHandle EnterCriticalSection FormatMessageA FreeLibrary GetCurrentProcess GetCurrentProcessId GetCurrentThread GetCurrentThreadId GetEnvironmentVariableW GetHandleInformation GetLastError GetModuleFileNameW GetModuleHandleA GetModuleHandleExA GetModuleHandleW GetProcAddress GetProcessAffinityMask GetSystemInfo GetSystemTimeAsFileTime GetTempFileNameA GetTempPathA GetThreadContext GetThreadPriority GetTickCount64 GetTickCount InitializeConditionVariable InitializeCriticalSection IsDebuggerPresent LeaveCriticalSection LoadLibraryA LocalFree OpenProcess OutputDebugStringA ...
+  IMPORT api-ms-win-crt-convert-l1-1-0.dll (6): btowc mbrtowc mbsrtowcs strtoul wcrtomb wctob
+  IMPORT api-ms-win-crt-environment-l1-1-0.dll (1): getenv
+  IMPORT api-ms-win-crt-filesystem-l1-1-0.dll (4): _lock_file _unlock_file remove _fstat64
+  IMPORT api-ms-win-crt-heap-l1-1-0.dll (6): _aligned_free _aligned_malloc calloc free malloc realloc
+  IMPORT api-ms-win-crt-locale-l1-1-0.dll (3): ___mb_cur_max_func localeconv setlocale
+  IMPORT api-ms-win-crt-math-l1-1-0.dll (2): pow _fdopen
+  IMPORT api-ms-win-crt-private-l1-1-0.dll (7): _setjmp3 longjmp memchr memcmp memcpy memmove strchr
+  IMPORT api-ms-win-crt-runtime-l1-1-0.dll (12): _assert _beginthreadex _endthreadex _errno _execute_onexit_table _exit _initialize_onexit_table _initterm _initterm_e _register_onexit_function abort strerror
+  IMPORT api-ms-win-crt-stdio-l1-1-0.dll (20): __acrt_iob_func __stdio_common_vfprintf __stdio_common_vsprintf _fseeki64 _ftelli64 _get_osfhandle _lseeki64 _wfopen fclose fflush fopen fputc fputs fread ftell fwrite setvbuf _write _read _fileno
+  IMPORT api-ms-win-crt-string-l1-1-0.dll (19): _wcsicmp iswctype memset strcmp strcoll strlen strncmp strncpy strnlen strxfrm towlower towupper wcscmp wcscoll wcslen wcsnlen wcsxfrm wctype _strdup
+  IMPORT api-ms-win-crt-time-l1-1-0.dll (2): strftime wcsftime
+  IMPORT api-ms-win-crt-utility-l1-1-0.dll (1): rand_s
+  IMPORT SETUPAPI.dll (4): SetupDiEnumDeviceInterfaces SetupDiGetClassDevsW SetupDiGetDeviceInterfaceDetailW SetupDiOpenDevRegKey
+  IMPORT USER32.dll (24): AdjustWindowRectEx ChangeDisplaySettingsExW CreateWindowExW DefWindowProcW DestroyWindow DisplayConfigGetDeviceInfo EnumDisplayMonitors EnumDisplaySettingsW GetClientRect GetDisplayConfigBufferSizes GetForegroundWindow GetMonitorInfoW GetWindowLongA GetWindowLongW GetWindowRect IsWindow MonitorFromPoint MoveWindow OffsetRect QueryDisplayConfig RegisterClassExW SetRect SetWindowLongW SetWindowPos
+  EXPORTS (5): CreateDXGIFactory CreateDXGIFactory1 CreateDXGIFactory2 DXGIDeclareAdapterRemovalSupport DXGIGetDebugInterface1
+  VERSION CompanyName = DXVK
+  VERSION FileDescription = DirectX Graphics Infrastructure
+  VERSION FileVersion = 10.0.17763.1 (WinBuild.160101.0800)
+  VERSION InternalName = dxgi.dll
+  VERSION LegalCopyright = zlib/libpng license
+  VERSION OriginalFilename = dxgi.dll
+  VERSION ProductName = DXVK
+  VERSION ProductVersion = 10.0.17763.1

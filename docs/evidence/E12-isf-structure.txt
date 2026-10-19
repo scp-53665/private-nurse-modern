@@ -1,0 +1,203 @@
+ISF entries: 803
+size bucket (KiB, capped at 64): [(0, 77), (1, 186), (2, 268), (3, 130), (4, 54), (5, 21), (6, 16), (7, 14), (8, 10), (9, 9), (10, 5), (11, 2), (12, 2), (13, 1), (15, 1), (20, 2), (23, 1), (27, 2), (43, 1), (64, 1)]
+text runs (message lines): 20115   decoded chars: 737989   entries with no text: 74
+
+--- A0_0.ISF (2761 bytes)
+text-run map, one line per 16-byte row, 'T' where a decoded run starts:
+T 0000
+T 0010
+T 0020
+T 0030
+T 0040
+T 0050
+  0060
+  0070
+  0080
+  0090
+  00a0
+  00b0
+  00c0
+T 00d0
+T 00e0
+T 00f0
+T 0100
+  0110
+  0120
+  0130
+  0140
+T 0150
+T 0160
+T 0170
+T 0180
+T 0190
+T 01a0
+T 01b0
+  01c0
+  01d0
+  01e0
+  01f0
+T 0200
+T 0210
+T 0220
+T 0230
+  0240
+  0250
+  0260
+  0270
+  0280
+  0290
+  02a0
+  02b0
+  02c0
+  02d0
+  02e0
+  02f0
+  0300
+  0310
+  0320
+T 0330
+T 0340
+T 0350
+T 0360
+T 0370
+T 0380
+T 0390
+T 03a0
+  03b0
+  03c0
+T 03d0
+T 03e0
+T 03f0
+T 0400
+T 0410
+  0420
+  0430
+T 0440
+T 0450
+T 0460
+T 0470
+T 0480
+T 0490
+T 04a0
+  04b0
+T 04c0
+T 04d0
+T 04e0
+T 04f0
+T 0500
+T 0510
+T 0520
+T 0530
+T 0540
+T 0550
+T 0560
+T 0570
+T 0580
+  0590
+  05a0
+  05b0
+  05c0
+  05d0
+  05e0
+  05f0
+T 0600
+T 0610
+T 0620
+T 0630
+T 0640
+T 0650
+T 0660
+  0670
+  0680
+  0690
+T 06a0
+T 06b0
+T 06c0
+T 06d0
+T 06e0
+T 06f0
+T 0700
+T 0710
+T 0720
+T 0730
+T 0740
+T 0750
+  0760
+  0770
+  0780
+T 0790
+T 07a0
+T 07b0
+T 07c0
+T 07d0
+T 07e0
+T 07f0
+T 0800
+T 0810
+T 0820
+T 0830
+T 0840
+T 0850
+T 0860
+T 0870
+T 0880
+T 0890
+T 08a0
+T 08b0
+T 08c0
+T 08d0
+  08e0
+  08f0
+  0900
+  0910
+  0920
+  0930
+  0940
+  0950
+  0960
+T 0970
+T 0980
+T 0990
+  09a0
+T 09b0
+T 09c0
+T 09d0
+T 09e0
+T 09f0
+T 0a00
+T 0a10
+T 0a20
+T 0a30
+T 0a40
+  0a50
+  0a60
+  0a70
+  0a80
+  0a90
+  0aa0
+  0ab0
+  0ac0
+rows with a run start: 107   runs: 24
+
+first 4 message offsets and lengths:
+  @0x22 (19 chars)
+  @0x55 (86 chars)
+  @0x10d (38 chars)
+  @0x1b8 (60 chars)
+files=801 fully-tiled=404 blocked=397
+     337  truncated-operands
+      43  truncated-onjs-table
+       5  unverified-op-84
+       5  unverified-op-57
+       3  unverified-op-44
+       3  truncated-onjs-head
+       1  unverified-op-47
+gaps tiled=19399 (TAG: 12234) blocked=716
+     582  truncated-operands
+     107  truncated-onjs-table
+       7  unverified-op-84
+       7  unverified-op-57
+       6  truncated-onjs-head
+       4  unverified-op-44
+       2  unverified-op-47
+       1  unverified-op-36

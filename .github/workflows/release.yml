@@ -1,0 +1,31 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: i686-pc-windows-msvc,x86_64-pc-windows-msvc
+
+      - name: Install the release script dependency
+        run: python -m pip install pefile
+
+      - name: Build the release zip
+        run: python tools/release.py
+
+      - name: Publish the GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $zip = Get-ChildItem target/dist/pn-modern-*.zip | Select-Object -First 1
+          gh release create $env:GITHUB_REF_NAME $zip.FullName --title $env:GITHUB_REF_NAME --generate-notes

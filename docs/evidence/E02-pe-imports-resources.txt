@@ -1,0 +1,44 @@
+--- imports, full name lists
+WINMM.dll (24):
+   mciSendCommandA midiOutGetDevCapsA mixerClose mixerGetControlDetailsA mixerGetDevCapsA mixerGetLineControlsA mixerGetLineInfoA mixerOpen mixerSetControlDetails mmioAscend mmioClose mmioCreateChunk mmioDescend mmioGetInfo mmioOpenA mmioRead mmioSeek mmioWrite timeBeginPeriod timeEndPeriod timeGetTime timeKillEvent timeSetEvent waveOutGetDevCapsA
+DSOUND.dll (1):
+   ord#1
+MSACM32.dll (14):
+   acmDriverAddA acmDriverClose acmDriverDetailsA acmDriverEnum acmDriverOpen acmFormatSuggest acmGetVersion acmMetrics acmStreamClose acmStreamConvert acmStreamOpen acmStreamPrepareHeader acmStreamSize acmStreamUnprepareHeader
+KERNEL32.dll (129):
+   CloseHandle CompareStringA CompareStringW CreateFileA CreateMutexA CreateProcessA DeleteCriticalSection DeleteFileA DuplicateHandle EnterCriticalSection ExitProcess FileTimeToLocalFileTime FileTimeToSystemTime FindClose FindFirstFileA FindNextFileA FindResourceA FlushFileBuffers FreeEnvironmentStringsA FreeEnvironmentStringsW FreeLibrary GetACP GetCPInfo GetCommandLineA GetCurrentDirectoryA GetCurrentProcess GetCurrentThread GetCurrentThreadId GetDateFormatA GetDriveTypeA GetEnvironmentStrings GetEnvironmentStringsW GetExitCodeProcess GetFileAttributesA GetFileSize GetFileTime GetFileType GetFullPathNameA GetLastError GetLocalTime GetModuleFileNameA GetModuleHandleA GetOEMCP GetPrivateProfileStringA GetProcAddress GetProcessVersion GetStartupInfoA GetStdHandle GetStringTypeA GetStringTypeW GetSystemDefaultLCID GetTempPathA GetTickCount GetTimeFormatA GetTimeZoneInformation GetVersion GetVersionExA GetVolumeInformationA GlobalAddAtomA GlobalAlloc GlobalDeleteAtom GlobalFindAtomA GlobalFlags GlobalFree GlobalGetAtomNameA GlobalHandle GlobalLock GlobalReAlloc GlobalUnlock HeapAlloc HeapCreate HeapDestroy HeapFree HeapReAlloc HeapSize InitializeCriticalSection InterlockedDecrement InterlockedExchange InterlockedIncrement IsBadCodePtr IsBadReadPtr IsBadWritePtr LCMapStringA LCMapStringW LeaveCriticalSection LoadLibraryA LoadResource LocalAlloc LocalFree LocalReAlloc LockFile LockResource MoveFileA MulDiv MultiByteToWideChar OpenMutexA RaiseException ReadFile RtlUnwind SetCurrentDirectoryA SetEndOfFile SetEnvironmentVariableA SetErrorMode SetFilePointer SetHandleCount SetLastError SetStdHandle SetThreadPriority SetUnhandledExceptionFilter Sleep TerminateProcess TlsAlloc TlsFree TlsGetValue TlsSetValue UnhandledExceptionFilter UnlockFile VirtualAlloc VirtualFree WaitForSingleObject WideCharToMultiByte WriteFile WritePrivateProfileStringA lstrcatA lstrcmpA lstrcmpiA lstrcpyA lstrcpynA lstrlenA
+USER32.dll (132):
+   AdjustWindowRect AdjustWindowRectEx BeginPaint BringWindowToTop CallNextHookEx CallWindowProcA ChangeDisplaySettingsA CharUpperA CheckMenuItem ClientToScreen ClipCursor CloseWindow CopyRect CreateDialogIndirectParamA CreateWindowExA DefWindowProcA DestroyMenu DestroyWindow DispatchMessageA DrawTextA EnableMenuItem EnableWindow EndDialog EndPaint EnumDisplaySettingsA FillRect FindWindowA GetActiveWindow GetAsyncKeyState GetCapture GetClassInfoA GetClassLongA GetClassNameA GetClientRect GetCursorPos GetDC GetDesktopWindow GetDlgCtrlID GetDlgItem GetFocus GetForegroundWindow GetKeyState GetLastActivePopup GetMenu GetMenuCheckMarkDimensions GetMenuItemCount GetMenuItemID GetMenuState GetMessageA GetMessagePos GetMessageTime GetNextDlgTabItem GetParent GetPropA GetSubMenu GetSysColor GetSysColorBrush GetSystemMenu GetSystemMetrics GetTopWindow GetUpdateRect GetWindow GetWindowLongA GetWindowPlacement GetWindowRect GetWindowTextA GrayStringA InflateRect IntersectRect InvalidateRect IsDialogMessageA IsIconic IsRectEmpty IsWindow IsWindowEnabled IsWindowVisible LoadAcceleratorsA LoadBitmapA LoadCursorA LoadCursorFromFileA LoadIconA LoadImageA LoadMenuA LoadStringA MapDialogRect MapWindowPoints MessageBoxA ModifyMenuA MoveWindow OffsetRect PeekMessageA PostMessageA PostQuitMessage PtInRect RedrawWindow RegisterClassA RegisterWindowMessageA ReleaseCapture ReleaseDC RemovePropA ScreenToClient ScrollWindowEx SendDlgItemMessageA SendMessageA SetActiveWindow SetCapture SetCursor SetCursorPos SetDlgItemTextA SetFocus SetForegroundWindow SetMenu SetMenuItemBitmaps SetPropA SetRect SetRectEmpty SetWindowLongA SetWindowPos SetWindowTextA SetWindowsHookExA ShowWindow SystemParametersInfoA TabbedTextOutA TrackPopupMenu TranslateAcceleratorA TranslateMessage UnhookWindowsHookEx UnregisterClassA UpdateWindow ValidateRect WinHelpA wsprintfA
+GDI32.dll (44):
+   BitBlt CombineRgn CreateBitmap CreateCompatibleBitmap CreateCompatibleDC CreateDIBSection CreateFontA CreatePatternBrush CreateRectRgn CreateRectRgnIndirect CreateSolidBrush DeleteDC DeleteObject Escape ExtSelectClipRgn ExtTextOutA GetClipBox GetDeviceCaps GetObjectA GetStockObject GetTextExtentPoint32A OffsetRgn OffsetViewportOrgEx PatBlt PtVisible RectVisible RestoreDC SaveDC ScaleViewportExtEx ScaleWindowExtEx SelectClipRgn SelectObject SetBkColor SetBkMode SetDIBColorTable SetMapMode SetRectRgn SetStretchBltMode SetTextColor SetViewportExtEx SetViewportOrgEx SetWindowExtEx StretchBlt TextOutA
+comdlg32.dll (1):
+   GetFileTitleA
+WINSPOOL.DRV (3):
+   ClosePrinter DocumentPropertiesA OpenPrinterA
+ADVAPI32.dll (5):
+   RegCloseKey RegCreateKeyExA RegOpenKeyExA RegQueryValueExA RegSetValueExA
+SHELL32.dll (1):
+   SHAppBarMessage
+COMCTL32.dll (4):
+   CreatePropertySheetPageA DestroyPropertySheetPage PropertySheetA ord#17
+ole32.dll (3):
+   CoCreateInstance CoInitialize CoUninitialize
+fakecdda.dll (1):
+   mciSendCommandA
+fakecdda.dll (1):
+   mixerSetControlDetails
+--- resources (type -> ids)
+RT_CURSOR        2 [2, 3]
+RT_BITMAP        4 [26567, 30994, 30995, 30996]
+RT_ICON          1 [1]
+RT_MENU          4 [131, 141, 142, 143]
+RT_DIALOG        43 [108, 109, 135, 149, 150, 151, 152, 153]
+RT_STRING        14 [1876, 1877, 2051, 3841, 3842, 3843, 3857, 3858]
+RT_ACCELERATOR   1 [166]
+RT_GROUP_CURSOR  1 [30977]
+RT_GROUP_ICON    1 [101]
+RT_VERSION       1 [1]
+--- RT_MANIFEST
+(none)
+--- DllCharacteristics 0x0000
+--- debug directory entries: 0

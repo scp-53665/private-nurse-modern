@@ -1,0 +1,15 @@
+ADVAPI32.dll
+COMCTL32.DLL
+COMCTL32.dll
+DSOUND.dll
+GDI32.dll
+KERNEL32.dll
+MSACM32.DLL
+MSACM32.dll
+SHELL32.dll
+USER32.dll
+WINMM.dll
+comdlg32.dll
+fakecdda.dll
+ole32.dll
+user32.dll

@@ -1,0 +1,20 @@
+decoded 737989 dialogue characters across ISF
+0xFF occurrences: 20115 as first char of a run, 0 inside runs
+lone terminators appended: 20115 runs, '.'x12122, '"'x6867, '?'x523, ','x332, '!'x208, ' 'x32, "'"x22, ')'x3
+0xFD bytes by entry-relative offset parity: even=359853 odd=358207
+run markers (leading 0xFF) by entry-relative parity: even=10028 odd=10087
+distinct character codes in decoded runs: 78
+unmapped codes by frequency: [('FF', 20115)]
+
+--- A0_0.ISF @0x22 (19 chars)
+--- A0_0.ISF @0x55 (86 chars)
+--- A0_0.ISF @0x10d (38 chars)
+--- A0_0.ISF @0x1b8 (60 chars)
+--- A0_1.ISF @0x22 (46 chars)
+--- A0_1.ISF @0x8a (49 chars)
+--- A0_1.ISF @0x1ce (14 chars)
+--- A0_1.ISF @0x1f8 (58 chars)
+--- A0_2.ISF @0x1b (37 chars)
+--- A0_2.ISF @0x71 (49 chars)
+--- A0_2.ISF @0xdf (54 chars)
+--- A0_2.ISF @0x159 (49 chars)

@@ -1,0 +1,8 @@
+# The shipped DLL is copied into someone else's game folder: statically link the MSVC
+# CRT so it does not require a VC++ redistributable to be installed. PN-Patch.exe (x64) is
+# shipped to the same machines and needs it too (review s14 S14-3: the default build
+# imports VCRUNTIME140.dll, which Windows does not include).
+[target.i686-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

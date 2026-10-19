@@ -1,0 +1,10 @@
+  GGD    entries=1036  payload_bytes=343631962    first='AFTER.GGD' last='YU_007.GGD'
+  ISF    entries=803   payload_bytes=2618990      first='-C-O\x99Å.TXT' last='TU_END3.ISF'
+  SE     entries=77    payload_bytes=9922994      first='AY_0412.WAV' last='TA_0055.WAV'
+  VOICE  entries=2715  payload_bytes=136126808    first='AO_0001.WAV' last='YU_0035.WAV'
+  WMSC   entries=1     payload_bytes=352940       first='MUON.WAV' last='MUON.WAV'
+  SM2MPX data_start: GGD=0x5110 ISF=0x3edc (== 0x20 + count*20 in both cases)
+  SE: table_size=1248 records=78 rec_size=16
+  VOICE: table_size=43456 records=2716 rec_size=16
+  WMSC: table_size=32 records=1 rec_size=32
+selftest: PASS

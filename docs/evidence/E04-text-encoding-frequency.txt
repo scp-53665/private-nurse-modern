@@ -1,0 +1,8 @@
+total aligned u16 across ISF entries: 1309294
+top high bytes: [('0xfd', 358207, '27.4%'), ('0x0', 264455, '20.2%'), ('0x80', 57799, '4.4%'), ('0x95', 32451, '2.5%'), ('0x85', 25570, '2.0%'), ('0x8', 25394, '1.9%'), ('0xd1', 22863, '1.7%'), ('0xbd', 22384, '1.7%')]
+
+marker high byte = 0xfd; payload bytes = 358207 distinct=87
+payload histogram (top 24), as code:count -- the doc cites these codes:
+   0x80:57217 0x95:31051 0xd1:22293 0xbd:21889 0x85:20979 0xcd:17329 0xb9:16203 0xa5:15467 0xa1:14990 0xc9:14197 0xb8:12250 0xb1:10605 0xff:10028 0xb5:7961 0x91:7876 0xe5:7778 0xd5:7588 0x9d:5974 0x25:5442 0xdd:5121 0x8d:4763 0x99:4230 0x9c:4065 0xad:3845
+
+best constant-shift match to English letter frequency:

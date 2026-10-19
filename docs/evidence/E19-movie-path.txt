@@ -1,0 +1,26 @@
+--- NURSEUS.EXE: AVIP strings (opens VideoDir + name + .AVI)
+%s%s
+.AVI
+VideoDir
+--- ISF: AVIP-shaped byte runs
+# entries=803 avip_shaped=16 plausible_names=0
+CG03.ISF @0x0611 prefix=2 name=b'A'
+CG13.ISF @0x0635 prefix=2 name=b'A'
+CG_ALL.ISF @0x19ff prefix=1 name=b'\xd0}\xc0\xe0'
+CG_ALL.ISF @0x19ff prefix=2 name=b'}\xc0\xe0'
+CG_ALL.ISF @0x31d7 prefix=1 name=b'\xc0\xe4'
+CG_ALL.ISF @0x31d7 prefix=2 name=b'\xe4'
+CG_ALL.ISF @0x59b5 prefix=1 name=b'\xc0\xe4'
+CG_ALL.ISF @0x59b5 prefix=2 name=b'\xe4'
+CG_ALL.ISF @0x6592 prefix=1 name=b'\xc8}\xc0\xc0'
+CG_ALL.ISF @0x6592 prefix=2 name=b'}\xc0\xc0'
+DAY11_7.ISF @0x03a8 prefix=1 name=b'\xc8\xe0\xc4'
+DAY11_7.ISF @0x03a8 prefix=2 name=b'\xe0\xc4'
+GAME.ISF @0x4088 prefix=1 name=b'-'
+GAME.ISF @0x4548 prefix=2 name=b'(\x91\x85\xe5\xc4\xd8}\xc4'
+GAME.ISF @0x7c43 prefix=1 name=b'-'
+GAME.ISF @0xaa3b prefix=2 name=b'$\xb5\xc8}\xc0\xdc\xe0'
+--- fakecdda.dll (stock CDDA->MP3 shim): MCI command strings
+TK%02u.MP3
+open TK%s.MP3 type mpegvideo alias tmpdev
+play tmpdev

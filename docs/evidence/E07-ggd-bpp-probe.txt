@@ -1,0 +1,20 @@
+GGD: 1036 entries with a tag; ratio (payload-tag-header)/(w*h):
+   ratio 0.015   count 10
+   ratio 0.016   count 9
+   ratio 0.017   count 8
+   ratio 0.019   count 7
+   ratio 0.02    count 7
+   ratio 0.498   count 6
+   ratio 0.499   count 6
+   ratio 0.012   count 6
+   ratio 0.018   count 6
+   ratio 0.011   count 6
+   ratio 0.605   count 6
+   ratio 0.497   count 5
+   tag offsets present: [0, 86, 278] (0 = GGD-style, 278 = GAD w/ 0x116 header)
+   bands: 0.46-0.50 -> 63 | 1.93-2.18 -> 147 | 3.08-3.13 -> 3
+   smallest entries: [(0.008, 'BLACK.GGD', 2422, 640, 480, 0), (0.008, 'PN_BETA.GGD', 608, 632, 120, 0), (0.008, 'WHITE.GGD', 2422, 640, 480, 0), (0.009, 'CDF06_01.GGD', 2638, 640, 480, 0), (0.009, 'CDF06_02.GGD', 2638, 640, 480, 0)]
+   largest entries: [(3.125, 'ETC07_13.GGD', 959864, 640, 480, 0), (3.083, 'ETC07_04.GGD', 947195, 640, 480, 0), (3.082, 'ETC07_06.GGD', 946948, 640, 480, 0)]
+   worst case ETC07_13.GGD: 959864 B at 640x480
+     raw 24bpp = 921600 -> overhead would need to be 38264 B (3.99% of payload)
+     raw 32bpp = 1228800 -> codec ratio 0.781

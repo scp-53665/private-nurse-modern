@@ -1,0 +1,18 @@
+[package]
+name = "pn_shared"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Private Nurse — Modern Windows Patch: the INI model shared by the DLL and PN-Patch.exe"
+publish = false
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "warn"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+too_many_lines = "warn"
+cognitive_complexity = "warn"
+unwrap_used = "warn"
+expect_used = "warn"

@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: i686-pc-windows-msvc,x86_64-pc-windows-msvc
+          components: clippy,rustfmt
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Format
+        run: cargo fmt --all --check
+
+      - name: Clippy (hook DLL, i686)
+        run: cargo clippy --all-targets --target i686-pc-windows-msvc -- -D warnings
+
+      - name: Clippy (PN-Patch, x86_64)
+        run: cargo clippy --all-targets -p pn_config -p pn_shared -- -D warnings
+
+      - name: Test (hook DLL and shared)
+        run: cargo test --target i686-pc-windows-msvc
+
+      - name: Test (PN-Patch)
+        run: cargo test -p pn_config
+
+      - name: Build both artifacts
+        run: |
+          cargo build --release --target i686-pc-windows-msvc
+          cargo build --release -p pn_config

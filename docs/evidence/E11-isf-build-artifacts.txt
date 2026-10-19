@@ -1,0 +1,4 @@
+=== ISF entry '-C-O\x99Å.TXT' offset=0x3ee0 size=1095
+    decoded cp932: 665 chars, 25 non-empty lines, 0 source-file references
+=== ISF entry 'ERROR.LOG' offset=0x175ec0 size=100102
+    decoded cp932: 87286 chars, 1602 non-empty lines, 772 source-file references

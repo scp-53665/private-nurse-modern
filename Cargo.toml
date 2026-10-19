@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["crates/pn_config", "crates/pn_presenter", "crates/pn_shared"]
+# `cargo build --target i686-pc-windows-msvc` builds the hook DLL only. PN-Patch.exe is
+# built for x86_64 (`-p pn_config`): a 32-bit EXE without a manifest is UAC-virtualized
+# and would "install" into VirtualStore instead of Program Files.
+default-members = ["crates/pn_presenter", "crates/pn_shared"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+license = "MIT"

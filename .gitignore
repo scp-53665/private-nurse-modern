@@ -1,0 +1,16 @@
+# The game's own files. Never commit them. Supply your own copy as ./original
+# to run the evidence tools.
+original/
+
+# Build output.
+target/
+
+# Python.
+__pycache__/
+*.pyc
+
+# Scratch, run staging, and local notes.
+work/
+
+# Local extraction output. It can contain game data, so it is never committed.
+extracted/

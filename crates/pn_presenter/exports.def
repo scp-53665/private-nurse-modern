@@ -1,0 +1,9 @@
+; Proxy surface: byte-for-byte the export names of the stock shim, which is what
+; NURSEUS.EXE imports (E02 §imports: fakecdda.dll -> mciSendCommandA,
+; mixerSetControlDetails; the stock DLL's export table — same three names — is in E01,
+; `original/fakecdda.dll` section).
+; Keep undecorated: the host IAT is filled by name.
+EXPORTS
+    mciSendCommandA
+    mciSendStringA
+    mixerSetControlDetails

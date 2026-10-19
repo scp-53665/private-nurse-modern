@@ -1,0 +1,13 @@
+.?AU_AFX_PROPPAGEFONTINFO@@
+0xF8	SETFONTSTYLE : 
+0xF9	SETFONTCOLOR : 
+CFont
+CGDTPropertySheetSystem
+CreateFontA
+FileTimeToSystemTime
+GetSystemDefaultLCID
+GetSystemMenu
+GetSystemMetrics
+MS Sans Serif
+System
+SystemParametersInfoA
